@@ -10,7 +10,6 @@
 
 /* pag principal */
 body {
-    background-color: #00cccc;
     background-image: linear-gradient(0deg, #00cccc 10%, #2AF598 100%);
     background-repeat: no-repeat;
     min-width: 100%;
@@ -20,7 +19,7 @@ body {
     padding: 4rem;
 }
 
-menu {
+#menu {
     background: white;
     display: flex;
     flex-direction: row;
@@ -29,14 +28,14 @@ menu {
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-menu .menu {
+#menu .menu {
     display: flex;
     flex-direction: row;
     padding-left: 5rem;
     list-style: none;
 }
 
-menu nav.menu li{
+#menu nav.menu li{
    margin: 0;
    padding: 0;
    margin-right: 4rem;
@@ -44,39 +43,39 @@ menu nav.menu li{
    padding-bottom: 1rem;
 }
 
-menu nav.menu li a {
+#menu nav.menu li a {
     padding-left: 1rem;
     padding-right: 1rem;
 }
 
 /*sub pastas*/
-menu ul {
+#menu ul {
     list-style: none;
     width: 18rem;
     padding-top: 1rem;
     display: none;
 }
 
-menu li:hover > ul {
+#menu li:hover > ul {
     display: block;
 }
 
-menu ul a {
+#menu ul a {
     color: black;
     text-decoration: none;
     background: #2AF598;
     border-radius: 25px;
 }
 
-menu ul a:hover {
+#menu ul a:hover {
     background: #32da8e;
 }
 
-menu li {
+#menu li {
     margin-left: 3rem;
 }
 
-menu li a {
+#menu li a {
     color: black;
     text-decoration: none;
     background: #2AF598;
@@ -84,20 +83,90 @@ menu li a {
     padding: 0.5rem;
 }
 
-menu li a:hover {
+#menu li a:hover {
     background: #32da8e;
 }
 
-menu li:first-child {
+#menu li:first-child {
     width: 5rem;
 }
 
-menu li:last-child {
+#menu li:last-child {
     width: 10rem;
 }
 
+.imagemquimico {
+	background-image: url(https://iili.io/5JziGV.md.png);
+	background-repeat: no-repeat;
+	width: 32rem;
+    padding-right: 2rem;
+	
+}
 
-content {
+.decantacao {
+	margin-top: 10px;
+	background-image: url(https://iili.io/5Jhzmb.md.png);
+	height: 246px;
+	width: 581px;
+	background-repeat: no-repeat;
+}
+
+.decantacaoo {
+	background-image: url(https://iili.io/5JgKgf.png);
+	height: 418px;
+	width: 333px;
+	background-repeat: no-repeat;
+}
+
+.cafe {
+	margin-top: 10px;
+	background-image: url(https://iili.io/5JPVZN.jpg);
+	height: 418px;
+	width: 300px;
+	background-repeat: no-repeat;
+}
+
+.aspirador {
+	margin-top: 10px;
+	background-image: url(https://iili.io/5JPrnS.png);
+	height: 254px;
+	width: 198px;
+	background-repeat: no-repeat;
+}
+
+.garimpo {
+	margin-top: 20px;
+	background-image: url(https://iili.io/5JsWrX.md.png);
+	height: 396px;
+	width: 800px;
+	background-repeat: no-repeat;
+}
+
+.grao {
+	margin-top: 20px;
+	background-image: url(https://iili.io/5dJjYQ.md.jpg);
+	height: 396px;
+	width: 800px;
+	background-repeat: no-repeat;
+}
+
+.areia {
+	margin-top: 20px;
+	background-image: url(https://iili.io/5dJg6J.md.jpg);
+	height: 396px;
+	width: 800px;
+	background-repeat: no-repeat;
+}
+
+.sangue {
+	margin-top: 20px;
+	background-image: url(https://iili.io/5dJiyN.md.jpg);
+	height: 396px;
+	width: 800px;
+	background-repeat: no-repeat;
+}
+
+#content {
 	min-height: 100%;
     background: white;
     display: flex;
@@ -108,8 +177,9 @@ content {
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-txt h3{
+.text h3{
     width: 50rem;
+	margin-right: 2rem;
     margin-top: 1.5rem;
     font-weight: 400;
 }
@@ -119,7 +189,7 @@ img{
     padding-right: 2rem;
 }
 
-rodape {
+#footer {
     background: white;
     border-radius: 25px;
     margin-top: 3rem;
@@ -152,17 +222,17 @@ h5 {
 }
 
 @media screen and (min-width:220px) and (max-width:568px){
-	body, head,menu, nav, content
-#rodape{ margin-left:0px;}
+	body, div
+#footer{ margin-left:0px;}
 }
-
 @media screen and (min-width:569px) and (max-width:767px){
-	body, head, menu, nav, content
-#rodape { margin-left:0px;}
+	body, div
+#footer { margin-left:0px;}
 }
 
 @media screen and (min-width:768px) and (max-width:1024px) {
-	body, head, menu, nav, content
-#rodape { margin-left:0px;}
+	body, div
+#footer { margin-left:0px;}
 
 }
+
